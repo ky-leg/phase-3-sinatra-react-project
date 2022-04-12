@@ -38,12 +38,4 @@ end
     )
 end
 
-# 20.times do 
-#     #seed reviews
-#     Review.create(
-
-#     )
-# end
-
-
 puts "✅ Done seeding!"
