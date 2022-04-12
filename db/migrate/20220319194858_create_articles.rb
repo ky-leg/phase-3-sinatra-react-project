@@ -1,7 +1,7 @@
 class CreateArticles < ActiveRecord::Migration[6.1]
   def change
     create_table :articles do |t| 
-      t.string :type
+      t.string :category
       t.string :material
       t.string :color
       t.string :size

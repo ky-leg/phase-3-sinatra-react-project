@@ -1,4 +1,4 @@
-class Review < ActiveRecord::Base
-    belongs_to :article
-    belongs_to :customer
-end
+# class Review < ActiveRecord::Base
+#     belongs_to :article
+#     belongs_to :customer
+# end
