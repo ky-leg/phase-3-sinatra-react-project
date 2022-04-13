@@ -1,14 +1,11 @@
 class ArticlesController < ApplicationController
-
-    get "/articles" do 
-        
-
-    # set :default_content_type, 'application/json'
-    
-    # # Add your routes here
-    # get "/" do
-    #   { message: "Good luck with your project!" }.to_json
-    # end
-  
+  get "/articles" do 
+    articles = Article.all
+    articles.to_json
+  end
+  delete "/articles/:id" do
+    article = Article.find(params[:id])
+    article.destory
+    article.to_json
   end
 end
