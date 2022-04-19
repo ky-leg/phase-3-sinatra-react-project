@@ -1,3 +1,9 @@
+puts "deleting old spices..."
+
+Customer.destroy_all
+Article.destroy_all
+Brand.destroy_all
+
 puts "🌱 Seeding spices..."
 
 # Seed your database here

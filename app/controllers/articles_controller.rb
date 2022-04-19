@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   get "/articles" do 
-    articles = Article.all
+    articles = Article.joins(:brand)
     articles.to_json
   end
   post "/articles" do 
