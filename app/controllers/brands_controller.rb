@@ -3,9 +3,11 @@ class BrandsController < ApplicationController
       brands = Brand.all
       brands.to_json
     end
-    delete "/brands/:id" do
-      brand = Brand.find(params[:id])
-      brand.destory
+    post "/brands" do 
+      brand = Brand.create(
+        origin: params[:origin],
+        name: params[:name],
+      )
       brand.to_json
     end
   end

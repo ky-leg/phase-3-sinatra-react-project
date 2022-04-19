@@ -22,7 +22,7 @@ end
     )
 end
 
-20.times do 
+5.times do 
     #seed articles
     categories = ["shirt", "pants", "sweater", "shoes", "jacket"]
     materials = ["denim", "leather", "wool", "cotton", "silk"]
