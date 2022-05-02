@@ -21,7 +21,6 @@ class ArticlesController < ApplicationController
       brand_id: params[:brand],
       customer_id: params[:customer]
     )
-
   end
   delete "/articles/:id" do
     article = Article.find(params[:id])
