@@ -12,12 +12,14 @@ kyle.goodwin93@gmail.com
 
 WALKTHRU A walkthru video for the web app can be found below:
 
-https://www.youtube.com/watch?v=8fevSBVODHs
+[Walkthru](https://www.youtube.com/watch?v=8fevSBVODHs)
 
 MORE INFO For more informaiton, please refer to the medium post below:
 
-https://medium.com/@kyle.goodwin93/clothes-tracker-e2ed4f14d5d8
+[Blog](https://medium.com/@kyle.goodwin93/clothes-tracker-e2ed4f14d5d8)
 
 GIT To download the very lateset source off the GIT server, do this:
 
+```bash 
 git clone https://github.com/ky-leg/phase-1-project.git
+```
