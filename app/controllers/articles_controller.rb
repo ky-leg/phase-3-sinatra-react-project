@@ -1,8 +1,9 @@
 class ArticlesController < ApplicationController
   get "/articles" do 
-    articles = Article.joins(:brand)
-    articles.to_json
+    articles = Article.all
+    articles.to_json(include: [:brand, :customer])
   end
+
   post "/articles" do 
     article = Article.create(
       brand_id: params[:brand],
@@ -12,7 +13,7 @@ class ArticlesController < ApplicationController
       color: params[:color],
       material: params[:material]
     )
-    article.to_json
+    article.to_json(include: :brand)
   end
   patch "/articles/:id" do
     puts params
